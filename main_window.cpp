@@ -126,19 +126,19 @@ void main_window::bCOM_slot()
 
 void main_window::treat_mtp_closing()
 {
-    cout<<"mtp has been destroyed"<<endl<<(int)this->motorTestPanel<<endl;
+    //cout<<"mtp has been destroyed"<<endl<<(int)this->motorTestPanel<<endl;
     this->buttonMTP->setEnabled(true);
 }
 
 void main_window::treat_acc_closing()
 {
-    cout<<"acc has been destroyed"<<endl<<(int)this->accPanel<<endl;
+    //cout<<"acc has been destroyed"<<endl<<(int)this->accPanel<<endl;
     this->buttonACC->setEnabled(true);
 }
 
 void main_window::treat_com_closing()
 {
-    cout<<"com has been destroyed"<<endl<<(int)this->comPanel<<endl;
+    //cout<<"com has been destroyed"<<endl<<(int)this->comPanel<<endl;
     this->buttonCOM->setEnabled(true);
 }
 

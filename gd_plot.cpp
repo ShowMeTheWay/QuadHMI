@@ -796,36 +796,36 @@ void gd_plot::drawSerialInfo(QPainter *painter)
                       this->connInfoRect.y()+this->connInfoRect.width()/2);
     int diameter = this->connInfoRect.width();
 
-    painter->drawStaticText(QPoint(C.x()-diameter/4, //
+    painter->drawText(QPoint(C.x()-diameter/4, //
                             C.y()-diameter/2),QString("connection info:"));
-    painter->drawStaticText(QPoint(C.x()-diameter/4, //
+    painter->drawText(QPoint(C.x()-diameter/4, //
                             C.y()-diameter/2+10),this->serial_info.statusStr);
-    painter->drawStaticText(QPoint(C.x()+5-diameter/2, //
+    painter->drawText(QPoint(C.x()+5-diameter/2, //
                             C.y()-diameter/2+25),QString("Baud: "));
-    painter->drawStaticText(QPoint(C.x()+5-diameter/2, //
+    painter->drawText(QPoint(C.x()+5-diameter/2, //
                             C.y()-diameter/2+35),QString("DataBits: "));
-    painter->drawStaticText(QPoint(C.x()+5-diameter/2, //
+    painter->drawText(QPoint(C.x()+5-diameter/2, //
                             C.y()-diameter/2+45),QString("Parity: "));
-    painter->drawStaticText(QPoint(C.x()+5-diameter/2, //
+    painter->drawText(QPoint(C.x()+5-diameter/2, //
                             C.y()-diameter/2+55),QString("StopBits: "));
-    painter->drawStaticText(QPoint(C.x()+5-diameter/2, //
+    painter->drawText(QPoint(C.x()+5-diameter/2, //
                             C.y()-diameter/2+65),QString("FlowCtrl: "));
-    painter->drawStaticText(QPoint(C.x()+5-diameter/2, //
+    painter->drawText(QPoint(C.x()+5-diameter/2, //
                             C.y()-diameter/2+75),QString("COM: "));
 
-    painter->drawStaticText(C.x()+5, C.y()-diameter/2+25, this->serial_info.baude);
-    painter->drawStaticText(C.x()+5, C.y()-diameter/2+35, this->serial_info.data_bits);
-    painter->drawStaticText(C.x()+5, C.y()-diameter/2+45, this->serial_info.parity);
-    painter->drawStaticText(C.x()+5, C.y()-diameter/2+55, this->serial_info.stop_bits);
-    painter->drawStaticText(C.x()+5, C.y()-diameter/2+65, this->serial_info.flow_ctrl);
-    painter->drawStaticText(C.x()+5, C.y()-diameter/2+75, this->serial_info.com);
+    painter->drawText(C.x()+5, C.y()-diameter/2+25, this->serial_info.baude);
+    painter->drawText(C.x()+5, C.y()-diameter/2+35, this->serial_info.data_bits);
+    painter->drawText(C.x()+5, C.y()-diameter/2+45, this->serial_info.parity);
+    painter->drawText(C.x()+5, C.y()-diameter/2+55, this->serial_info.stop_bits);
+    painter->drawText(C.x()+5, C.y()-diameter/2+65, this->serial_info.flow_ctrl);
+    painter->drawText(C.x()+5, C.y()-diameter/2+75, this->serial_info.com);
 
-//    painter->drawStaticText(C.x()+5, C.y()-diameter/2+15, serial_connection_status::baudR);
-//    painter->drawStaticText(C.x()+5, C.y()-diameter/2+35, serial_connection_status::dataB);
-//    painter->drawStaticText(C.x()+5, C.y()-diameter/2+55, serial_connection_status::Parity);
-//    painter->drawStaticText(C.x()+5, C.y()-diameter/2+75, serial_connection_status::stopB);
-//    painter->drawStaticText(C.x()+5, C.y()-diameter/2+95, serial_connection_status::flowCtrl);
-//    painter->drawStaticText(C.x()+5, C.y()-diameter/2+115, serial_connection_status::port_);
+//    painter->drawText(C.x()+5, C.y()-diameter/2+15, serial_connection_status::baudR);
+//    painter->drawText(C.x()+5, C.y()-diameter/2+35, serial_connection_status::dataB);
+//    painter->drawText(C.x()+5, C.y()-diameter/2+55, serial_connection_status::Parity);
+//    painter->drawText(C.x()+5, C.y()-diameter/2+75, serial_connection_status::stopB);
+//    painter->drawText(C.x()+5, C.y()-diameter/2+95, serial_connection_status::flowCtrl);
+//    painter->drawText(C.x()+5, C.y()-diameter/2+115, serial_connection_status::port_);
 
 }
 
@@ -960,28 +960,28 @@ void gd_plot::refreshPixmap()
     the_pen.setColor(Qt::white);
     painter.setPen(the_pen);
 
-    painter.drawStaticText(M1,QString("M1"));
-    painter.drawStaticText(M2.x()+5,M2.y(),QString("M2"));
-    painter.drawStaticText(M3,QString("M3"));
-    painter.drawStaticText(M4,QString("M4"));
+    painter.drawText(M1,QString("M1"));
+    painter.drawText(M2.x()+5,M2.y(),QString("M2"));
+    painter.drawText(M3,QString("M3"));
+    painter.drawText(M4,QString("M4"));
 
 //    alx labels
-    painter.drawStaticText(QPoint(M1.x()-20, //
+    painter.drawText(QPoint(M1.x()-20, //
                                   M2.y()-diameter/2+105),QString("M4"));
-    painter.drawStaticText(QPoint(M1.x()-20, //
+    painter.drawText(QPoint(M1.x()-20, //
                                   M2.y()-diameter/2+75),QString("M3"));
-    painter.drawStaticText(QPoint(M1.x()-20, //
+    painter.drawText(QPoint(M1.x()-20, //
                                   M2.y()-diameter/2+45),QString("M2"));
-    painter.drawStaticText(QPoint(M1.x()-20, //
+    painter.drawText(QPoint(M1.x()-20, //
                                   M2.y()-diameter/2+15),QString("M1"));
 
-//    painter.drawStaticText(QPoint(M1.x()-20, //
+//    painter.drawText(QPoint(M1.x()-20, //
 //                                  M2.y()+diameter/2),QString("M4"));
-//    painter.drawStaticText(QPoint(M1.x()-20, //
+//    painter.drawText(QPoint(M1.x()-20, //
 //                                  M2.y()+diameter/2-20),QString("M3"));
-//    painter.drawStaticText(QPoint(M1.x()-20, //
+//    painter.drawText(QPoint(M1.x()-20, //
 //                                  M2.y()+diameter/2-40),QString("M2"));
-//    painter.drawStaticText(QPoint(M1.x()-20, //
+//    painter.drawText(QPoint(M1.x()-20, //
 //                                  M2.y()+diameter/2-60),QString("M1"));
 
 //    emstop button
